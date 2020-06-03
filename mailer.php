@@ -1,7 +1,7 @@
 <?PHP 
 $to = "zli@babson.edu"; 
 $subject = "Results from your Survey form";
-$headers = "From: ";
+$headers = "From: zli@babson.edu";
 $forward = 0;
 $location = "";
 
@@ -25,10 +25,14 @@ else {
 
 $sentmail = @mail($to, $subject, $msg, $headers); 
 if($sentmail){
-echo "Email Has Been Sent .";
+echo "Email Has Been Sent.";
 }
 else {
-echo "Cannot Send Email ";
+  echo $to 
+  echo $subject
+  echo $msg
+  echo $headers
+echo "Cannot Send Email.";
 exit();
 }
 
