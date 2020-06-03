@@ -28,10 +28,10 @@ if($sentmail){
 echo "Email Has Been Sent.";
 }
 else {
-  echo $to 
-  echo $subject
-  echo $msg
-  echo $headers
+  echo $to;
+  echo $subject;
+  echo $msg;
+  echo $headers;
 echo "Cannot Send Email.";
 exit();
 }
