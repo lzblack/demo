@@ -23,7 +23,7 @@ else {
 	}
 }
 
-$sentmail = @mail($to, $subject, $msg, $headers); 
+$sentmail = mail($to, $subject, $msg, $headers); 
 if($sentmail){
 echo "Email Has Been Sent.";
 }
